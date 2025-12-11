@@ -371,6 +371,57 @@ p {
     margin-bottom: var(--spacing-md);
 }
 
+/* --- Education Section (Inside About) --- */
+.about-visual {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.education-card {
+    padding: var(--spacing-lg);
+    border-left: 4px solid var(--accent-primary);
+    transition: var(--transition);
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    border-left-color: var(--accent-secondary);
+    background: rgba(56, 189, 248, 0.05);
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.edu-grade {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.education-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.education-card h4 {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.edu-skills {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
 /* --- Projects Section --- */
 /* Carousel Layout */
 .carousel-wrapper {

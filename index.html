@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhasish Saha | AI/ML Engineer</title>
+    <meta name="description" content="Personal portfolio showcasing my projects and skills.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Subhasish<span class="accent">.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <span class="greeting fade-in">Hello, I'm</span>
+                <h1 class="hero-title fade-in delay-1">Subhasish <span class="text-gradient">Saha</span></h1>
+                <p class="hero-subtitle fade-in delay-2">M.S. Data Science Candidate | Aspiring AI/ML Engineer | Deep
+                    Learning Enthusiast</p>
+                <div class="hero-buttons fade-in delay-3">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in delay-2">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Aspiring <strong>Data Scientist</strong> with experience in <strong>Artificial Intelligence,
+                                Machine Learning, and Natural Language Processing</strong>. Skilled in building
+                            intelligent systems using <strong>Python, PyTorch, and Transformer models</strong>.</p>
+                        <p>Passionate about applying data science to solve real-world problems and dedicated to
+                            continuous learning and staying current with industry advancements. Currently pursuing a
+                            <strong>Master of Science in Data Science</strong> at Vellore Institute of Technology.</p>
+
+                        <div class="skills-wrapper">
+                            <h3>Technical Stack & Core Concepts</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">R</span>
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">Tensorflow</span>
+                                <span class="skill-tag">HuggingFace Transformers</span>
+                                <span class="skill-tag">LangChain</span>
+                                <span class="skill-tag">LangGraph</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">NLP</span>
+                                <span class="skill-tag">Deep Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="glass-card profile-card">
+                            <div class="profile-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Education</h3>
+                            <p>M.S. Data Science Candidate</p>
+                            <p>VIT Chennai (2024-2026)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="smartairesearcher.png" alt="Smart AI Researcher Project Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart AI Researcher</h3>
+                            <p>Designed a smart researcher agent leveraging Tavily Search and Google Gemini through
+                                LangChain for automated retrieval and summarization of information. Orchestrated
+                                components using LangGraph.</p>
+                            <div class="project-tags">
+                                <span>LangChain</span>
+                                <span>LangGraph</span>
+                                <span>Google Gemini</span>
+                                <span>AI Agents</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-icon" aria-label="View Code"><i class="fab fa-github"></i></a>
+                                <a href="#" class="link-icon" aria-label="Live Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="googleplaystorereviewanalyzer.jpeg"
+                                alt="Google Play Store Review Analyzer Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3>Sentiment Analysis on Google Play Reviews</h3>
+                            <p>Built a sentiment analysis model by fine-tuning <strong>ROBERTa</strong> using
+                                <strong>PyTorch</strong> and <strong>HuggingFace Transformers</strong> to classify
+                                reviews, achieving <strong>93% training and 92% test accuracy</strong>.</p>
+                            <div class="project-tags">
+                                <span>PyTorch</span>
+                                <span>HuggingFace</span>
+                                <span>ROBERTa</span>
+                                <span>NLP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-icon" aria-label="View Code"><i class="fab fa-github"></i></a>
+                                <a href="#" class="link-icon" aria-label="Live Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="datathon.jpg" alt="Data Science Datathon Project Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3>Data Science Challenge (National Datathon)</h3>
+                            <p>Participated in the National Datathon at SRM University, applying Machine Learning to
+                                address real-world challenges.</p>
+                            <div class="project-tags">
+                                <span>Machine Learning</span>
+                                <span>Data Science</span>
+                                <span>Analytics</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-icon" aria-label="View Code"><i class="fab fa-github"></i></a>
+                                <a href="#" class="link-icon" aria-label="Live Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-wrapper glass-card">
+                    <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                    <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
+                    <a href="mailto:subhasishsaha.work@gmail.com" class="btn btn-primary">Say Hello <i
+                            class="fas fa-paper-plane"></i></a>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Subhasish Saha. Built with <i class="fas fa-heart accent"></i> and Code.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

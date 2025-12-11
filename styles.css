@@ -372,21 +372,116 @@ p {
 }
 
 /* --- Projects Section --- */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
+/* Carousel Layout */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
     margin-top: var(--spacing-xl);
 }
 
+.projects-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md) 0;
+    /* Add top/bottom padding for hover effects */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-top: 0;
+}
+
+.projects-grid::-webkit-scrollbar {
+    display: none;
+}
+
 .project-card {
+    flex: 0 0 calc((100% - (2 * var(--spacing-lg))) / 3);
+    min-width: 300px;
+    /* Fallback min-width for very small screens or resize */
+
+
     background: var(--bg-secondary);
     border-radius: var(--border-radius);
     overflow: hidden;
     border: 1px solid var(--glass-border);
     transition: var(--transition);
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
+@media (max-width: 1024px) {
+    .project-card {
+        flex: 0 0 calc((100% - var(--spacing-lg)) / 2);
+        /* 2 columns on tablet */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Mobile styles defined below override this if needed, 
+       but standard mobile behavior is usually 1 column or auto width */
+    .project-card {
+        flex: 0 0 85%;
+        /* 1 column with peek */
+        min-width: 280px;
+    }
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    opacity: 0;
+    pointer-events: none;
+    font-size: 1.2rem;
+}
+
+.carousel-wrapper:hover .scroll-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-btn:hover {
+    background: var(--accent-primary);
+    color: #fff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.left-btn {
+    left: -25px;
+}
+
+.right-btn {
+    right: -25px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        min-width: 300px;
+    }
+
+    .scroll-btn {
+        display: none;
+        /* Hide buttons on mobile, use swipe */
+    }
+}
+
+
 
 .project-card:hover {
     transform: translateY(-10px);
@@ -456,6 +551,12 @@ p {
 /* --- Contact Section --- */
 .contact-section {
     text-align: center;
+}
+
+/* Fix double-centering issue for title in centered section */
+.contact-section .section-title {
+    left: auto;
+    transform: none;
 }
 
 .contact-wrapper {
